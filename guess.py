@@ -1,7 +1,7 @@
 import random
 def guess():
-    rndNmbr = random.randint(0,20)
-    numGuesses = 5
+    rndNmbr = random.randint(0,100)
+    numGuesses = 10
     counter = 0
     while(counter < numGuesses):
         guess = input("Guess a number:")

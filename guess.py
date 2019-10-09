@@ -6,8 +6,11 @@ def guess():
     while(counter < numGuesses):
         guess = input("Guess a number:")
         if (int(guess) == rndNmbr):
-            print("You Win!")
-            break
+            if(counter == 1):
+                print("You won in 1 try!")
+            else:
+             print("You Won in", counter + 1, "tries!")
+             break
         if (counter < numGuesses - 1):
             if (int(guess) > rndNmbr):
                     print("Lower")

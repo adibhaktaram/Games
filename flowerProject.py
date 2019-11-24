@@ -152,7 +152,6 @@ class TearDrop(Petal):
             turtle.end_fill()
 
 if __name__ == '__main__':
-
     win = turtle.Screen()
     win.bgcolor("black")
     myLShaped = LShaped("white", 125)

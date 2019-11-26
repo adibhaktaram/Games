@@ -151,12 +151,13 @@ class TearDrop(Petal):
             turtle.fd(diameter)
             turtle.end_fill()
 
+
 if __name__ == '__main__':
     win = turtle.Screen()
     win.bgcolor("black")
     myLShaped = LShaped("white", 125)
     myTearDrop = TearDrop("white", 125)
-    myFlower = Flower("good", myTearDrop, 45)
+    myFlower = Flower("good", myLShaped, 6)
     t = turtle.Turtle()
     t.speed(0)
     myFlower.draw(t)
